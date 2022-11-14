@@ -95,7 +95,9 @@ f'Winner: {who_won}',
 " ",
 "---------------------------------------------"]
 
-with open("mainPoll.txt", "w") as text:
+mainpoll = os.path.join('.', 'Analysis', 'mainPoll.txt')
+
+with open(mainpoll, "w") as text:
     for info in write:
         text.write(info)
         text.write("\n")

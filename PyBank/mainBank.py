@@ -68,8 +68,9 @@ f'Greatest Increase in Profit: {greatmonth} (${greatprofit})',
 " ",
 f'Greatest Decrease in Profit: {worstmonth} (${worstloss})',
 " "]
+mainBank = os.path.join('.', 'Analysis', 'mainBank.txt')
 
-with open("mainbank.txt", "w") as text:
+with open(mainBank, "w") as text:
     for info in write:
         text.write(info)
         text.write("\n")
